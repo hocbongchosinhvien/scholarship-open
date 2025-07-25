@@ -6,7 +6,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import ErrorMessage from './components/ErrorMessage';
 import { useScholarships } from './hooks/useScholarships';
 import { filterScholarships, getUniqueAudiences } from './utils/filterScholarships';
-import { Facebook, Instagram, Gmail, Youtube, GraduationCap } from 'lucide-react';
+import { Facebook, Instagram, Mail, Youtube, GraduationCap } from 'lucide-react';
 
 function App() {
   const { scholarships, loading, error, refetch } = useScholarships();
