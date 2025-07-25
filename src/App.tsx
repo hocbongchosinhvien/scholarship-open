@@ -6,7 +6,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import ErrorMessage from './components/ErrorMessage';
 import { useScholarships } from './hooks/useScholarships';
 import { filterScholarships, getUniqueAudiences } from './utils/filterScholarships';
-import { Facebook, Instagram, Linkedin, Youtube, GraduationCap } from 'lucide-react';
+import { Facebook, Instagram, Gmail, Youtube, GraduationCap } from 'lucide-react';
 
 function App() {
   const { scholarships, loading, error, refetch } = useScholarships();
@@ -119,10 +119,15 @@ function App() {
         <a href="https://www.youtube.com/@hocbongchosinhvien" target="_blank" rel="noopener noreferrer" title="YouTube">
           <Youtube className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
+<a
+  href="mailto:hocbongchosinhvien@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Gửi email"
+>
+  <Mail className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
+</a>
 
-        <a href="https://www.linkedin.com/in/tnkietit/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <Linkedin className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
-        </a>
       </div>
 
       <p className="text-gray-600 text-sm text-center">
