@@ -31,7 +31,7 @@ function App() {
               </div>
               <div className="text-center">
                 <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">
-                  Scholarship Directory
+                  Apply - Học Bổng Cho Sinh Viên
                 </h1>
                 <p className="text-gray-600 text-sm mt-1">
                   Discover opportunities for your educational journey
