@@ -86,7 +86,7 @@ function App() {
       <footer className="bg-white border-t border-pink-100 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center text-gray-600">
-            <p>&copy; 2025 Scholarship Directory. Data sourced from Google Sheets.</p>
+            <p>&copy; 2025 Học bổng cho Sinh viên. Một sáng kiến cộng đồng hướng tới chất lượng giáo dục xuất sắc.</p>
           </div>
         </div>
       </footer>
