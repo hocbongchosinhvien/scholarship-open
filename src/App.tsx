@@ -91,7 +91,7 @@ function App() {
           <Facebook className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
 
-        <a href="https://facebook.com/groups/hocbongchosinhvien" target="_blank" rel="noopener noreferrer" title="Facebook Group">
+        <a href="https://facebook.com/groups/1135419907607527" target="_blank" rel="noopener noreferrer" title="Facebook Group">
           <GraduationCap className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
 
@@ -105,7 +105,7 @@ function App() {
           <Instagram className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
 
-        <a href="https://www.threads.net/@hocbongchosinhvien" target="_blank" rel="noopener noreferrer" title="Threads">
+        <a href="https://www.threads.com/@hocbongchosinhvien" target="_blank" rel="noopener noreferrer" title="Threads">
           <svg className="h-6 w-6 fill-gray-400 hover:fill-pink-600 transition-colors duration-200" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
             <path d="M176,128c13.3,10.2,20.8,25.7,20.8,41.2c0,27.1-22.5,48.8-51.2,48.8c-31.1,0-53.6-21.3-53.6-54.8
               c0-25.4,10.7-46.7,26.5-61.4c14.6-13.5,31.8-20.8,47.2-20.8c24.7,0,46.3,15.4,57.6,38.2c2.5,4.9-1.2,10.6-6.7,10.6h-0.5
@@ -119,7 +119,7 @@ function App() {
           <Youtube className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
 
-        <a href="https://www.linkedin.com/in/phamtuan-kiet/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/tnkietit/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <Linkedin className="h-6 w-6 text-gray-400 hover:text-pink-600 transition-colors duration-200" />
         </a>
       </div>
