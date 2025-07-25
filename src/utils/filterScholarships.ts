@@ -5,20 +5,29 @@ export const filterScholarships = (
   searchTerm: string,
   audienceFilter: string
 ): Scholarship[] => {
+  const normalizedSearch = searchTerm?.toLowerCase().trim() || '';
+  const normalizedAudience = audienceFilter?.toLowerCase().trim() || '';
+
   return scholarships.filter((scholarship) => {
-    const matchesSearch = !searchTerm || 
-      scholarship['Scholarship Name'].toLowerCase().includes(searchTerm.toLowerCase()) ||
-      scholarship['Target Audience'].toLowerCase().includes(searchTerm.toLowerCase()) ||
-      scholarship['Notes'].toLowerCase().includes(searchTerm.toLowerCase());
+    const name = scholarship['Scholarship Name']?.toLowerCase() || '';
+    const audience = scholarship['Target Audience']?.toLowerCase() || '';
+    const notes = scholarship['Notes']?.toLowerCase() || '';
+
+    const matchesSearch = !normalizedSearch || 
+      name.includes(normalizedSearch) ||
+      audience.includes(normalizedSearch) ||
+      notes.includes(normalizedSearch);
     
-    const matchesAudience = !audienceFilter || 
-      scholarship['Target Audience'] === audienceFilter;
-    
+    const matchesAudience = !normalizedAudience || 
+      audience === normalizedAudience;
+
     return matchesSearch && matchesAudience;
   });
 };
 
 export const getUniqueAudiences = (scholarships: Scholarship[]): string[] => {
-  const audiences = scholarships.map(s => s['Target Audience']).filter(Boolean);
+  const audiences = scholarships
+    .map(s => s['Target Audience'])
+    .filter((a): a is string => !!a); // loại bỏ null/undefined
   return Array.from(new Set(audiences)).sort();
 };
